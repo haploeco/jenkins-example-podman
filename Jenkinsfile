@@ -1,5 +1,7 @@
 pipeline {
-  agent any
+  agent {
+      label "main"
+  }
   environment {
     DH_CREDS=credentials('jfrog-plugin')
   }
